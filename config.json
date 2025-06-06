@@ -1,0 +1,12 @@
+{
+    "telegram_bot_token": "ВАШ_ТОКЕН_БОТА",
+    "telegram_user_id": ["ВАШ_ID_ПОЛЬЗОВАТЕЛЯ_TELEGRAM"],
+    "search_id": "ID_ПОИСКА_ПОЛИКЛИНИКИ",
+    "check_interval": 60,
+    "use_proxy": false,
+    "proxy": "ВАШ_ПРОКСИ",
+    "proxy_user": "ПОЛЬЗОВАТЕЛЬ_ПРОКСИ",
+    "proxy_password": "ПАРОЛЬ_ПРОКСИ",
+    "notify_on_change": true,
+    "monitoring": false
+}
