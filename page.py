@@ -14,8 +14,9 @@ class PageAPI:
             self.proxy = None
 
     def fetch_data(self):
+        """Возвращает JSON со списком специальностей или None при ошибке."""
         try:
-            response = requests.get(self.url, proxies=self.proxy if self.use_proxy else None, timeout=10)
+            response = requests.get(self.url, proxies=self.proxy, timeout=10)
             if response.status_code == 200:
                 return response.json()
         except requests.exceptions.RequestException as e:
