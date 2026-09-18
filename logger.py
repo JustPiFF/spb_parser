@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 def write_log(data):
     """Записывает логи в JSON-файл"""
     try:
-        with open(LOG_FILE, "a") as file:
+        with open(LOG_FILE, "a", encoding="utf-8") as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
             file.write(",\n")  # Добавляем разделитель для новых записей
     except Exception as e:
